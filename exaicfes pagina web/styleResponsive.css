@@ -1,4 +1,4 @@
-@media screen and (min-width: 1064px){
+@media screen and (min-width: 1024px){
 
     header {
       width: 100%;
@@ -82,7 +82,7 @@
     .containerMessageIcon{
       width: 4em;
       height: 3em;
-      position: relative;
+      position: sticky;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -139,7 +139,8 @@
         position: relative;
         width: 100%;
         height: 50em;
-        margin: 300em 0;
+        margin: 10em 0;
+        justify-content: flex-start;
     }
 
 
@@ -147,7 +148,13 @@
         position: relative;
         display: flex;
         width: 50%;
-        height: 100%;
+        height: 40%;
+        margin-left: 5em;
+    }
+
+    .imgHome{
+      width: 30em;
+      height: 25em;
     }
 
     .buttonDownload{
@@ -156,8 +163,11 @@
         background-color: rgb(255, 209, 3);
         border-radius: 2em;
         display: flex;
+        justify-self: end;
         justify-content: center;
         align-items: center;
+        margin-top: 40%;
+        
     }
     .buttonDownload p{
         font-weight: 700;
