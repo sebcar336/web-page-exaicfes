@@ -1,5 +1,4 @@
 @media screen and (min-width: 1024px){
-
   header {
     width: 100%;
     padding: 1em;
@@ -101,40 +100,179 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
-  }
-
-  .circleMessageIcon{
-    width: 0.25em;
-    height: 0.3em;
-    background-color: rgb(155, 32, 185);
-    border-radius: 50%;
-  }
-
-  .triangleMessageIcon{
-    width: 0;
-    height: 0;
-    border-right: 0em solid transparent;
-    border-top: 0em solid transparent;
-    border-left: 0.5em solid transparent;
-    border-bottom: 0.5em solid white;
-    rotate: 180deg;
-  }
-
-  .containerMessageIcon p{
-    display: flex;
-    width: auto;
-    height: auto;
-  }
-
-  @keyframes button-fade-in{
-    0% {
-        opacity: 0;
-        transform: translate(0%, 20%);
+    header {
+      width: 100%;
+      padding: 1em;
     }
-    100% {
-        opacity: 1;
-        transform: translate(0%, 0%);
+  
+    .logo img {
+      height: 3em;
+    }
+    
+  
+    ul.navItems{
+      overflow:visible;
+    }
+  
+    .openMenu{
+      display: none;
+    }
+  
+    ul{
+      flex-direction:row;
+      align-items: center;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-left: 5em;
+      width: 10em;
+    }
+    
+    nav ul li a {
+      display: inline;
+      font-size: large;
+    }
+  
+    .lineMenu{
+      height: 0.2em;
+    }
+  
+    .lineAboutUs{
+      width: 9em;
+    }
+  
+    .linePolitics{
+      width: 5em;
+    }
+  
+    .lineImage{
+      width: 6em;
+    }
+  
+    .lineContact{
+      width: 5.5em;
+    }
+  
+    .hablanos{
+      cursor: pointer;
+      border: 0.063em solid rgba(0, 0, 0, 0.05);
+      transition: 200ms opacity ease;
+      position: sticky;
+      left: 79%;
+      top: 90%;
+      overflow: hidden;
+      display: flex;
+      box-shadow: 0 0.25em 1.25em 0.25em rgba(0, 0, 0, 0.12);
+      animation: button-fade-in 200ms ease 0s;
+      align-items: center;
+      background-color: rgb(155, 32, 185);
+      height: 2.75em;
+      color: rgb(255, 255, 255);
+      border-radius: 2.625em;
+      width: 15em;
+      padding: 0 0.438em;
+    }
+  
+    .containerMessageIcon{
+      width: 4em;
+      height: 3em;
+      position: sticky;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 0.5em;
+    }
+  
+    .rectangleMessageIcon{
+      width: 2.3em;
+      height: 1.4em;
+      background-color: white;
+      border-radius: 0.5em;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      
+    }
+  
+    .circleMessageIcon{
+      width: 0.25em;
+      height: 0.3em;
+      background-color: rgb(155, 32, 185);
+      border-radius: 50%;
+    }
+  
+    .triangleMessageIcon{
+      width: 0;
+      height: 0;
+      border-right: 0em solid transparent;
+      border-top: 0em solid transparent;
+      border-left: 0.5em solid transparent;
+      border-bottom: 0.5em solid white;
+      rotate: 180deg;
+    }
+  
+    .containerMessageIcon p{
+      display: flex;
+      width: auto;
+      height: auto;
+    }
+  
+    @keyframes button-fade-in{
+      0% {
+          opacity: 0;
+          transform: translate(0%, 20%);
+      }
+      100% {
+          opacity: 1;
+          transform: translate(0%, 0%);
+      }
+    }
+
+    #inicio{
+        position: relative;
+        width: 100%;
+        height: 50em;
+        margin: 10em 0;
+        justify-content: flex-start;
+    }
+
+
+    .containerHome1{
+        position: relative;
+        display: flex;
+        width: 50%;
+        height: 40%;
+        margin-left: 5em;
+    }
+
+    .imgHome{
+      width: 30em;
+      height: 25em;
+    }
+
+    .buttonDownload{
+        width: 9em;
+        height: 3em;
+        background-color: rgb(255, 209, 3);
+        border-radius: 2em;
+        display: flex;
+        justify-self: end;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40%;
+        
+    }
+    .buttonDownload p{
+        font-weight: 700;
+        font-size: larger;
+        text-align: center;
     }
   }
 
