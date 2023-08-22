@@ -266,7 +266,7 @@ nav ul li:hover{
   display: flex;
   width: 100%;
   max-height: 100%;
-  background-image: url(https://raw.githubusercontent.com/sebcar336/web-page-exaicfes/main/exaicfes%20pagina%20web/backgroundHome.png);
+  background-image: url(https://raw.githubusercontent.com/sebcar336/web-page-exaicfes/main/img/backgroundHome.png);
   background-size:cover;
   background-position: center;
 }
