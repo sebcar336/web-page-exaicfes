@@ -1,8 +1,12 @@
 *{
   margin: 0;
   padding: 0;
-  border: 0;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+
+.invisible{
+  height: 13em;
 }
 
 header {
@@ -13,7 +17,7 @@ header {
   align-items: center;
   justify-content: space-around;
   background-color: rgb(255, 209, 3);
-  padding: 2em 0;
+  padding: 1.5em 0;
   box-shadow: 0 0.25em 1.25em 0em rgba(0, 0, 0, 0.5);
   z-index: 100;
 }
@@ -40,45 +44,17 @@ ul.navItems{
     background-color: rgb(255, 209, 3);
     padding: 2em 7em;
     box-shadow: 0 0.25em 1.25em 0em rgba(0, 0, 0, 0.5);
-    z-index: 100;
+    z-index: 100; 
   }
   
 }
 
-@keyframes closeMenuTrans {
-  0%{
-    height: 12em;
-  }
-
-  50%{
-    height: 6em;
-  }
-
-  100%{
-    height: 0em;
-  }
-  
-}
 
 #navigation:target .navItems{
-  /* height: 12em; */
+  height: 12em;
   transition: openMenuTrans 300ms ease 0s;
 }
 
-@keyframes openMenuTrans {
-  0%{
-    height: 0em;
-  }
-
-  50%{
-    height: 6em;
-  }
-
-  100%{
-    height: 12em;
-  }
-  
-}
 
 .close{
   display: none;
@@ -185,41 +161,19 @@ nav ul li {
   flex-direction: column;
   margin-left: 0;
   align-items: flex-end;
+  transition: scale 100ms linear;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #000000;
   display: flex;
   font-size: x-large;
-  font-weight: 700;
+  font-weight: 800;
+  color: #000;
 }
 
-.lineMenu{
-  height: 0.5em;
-  background-color: transparent;
-  margin: 0em 0;
-}
-
-.lineAboutUs{
-  width: 12em;
-}
-
-.linePolitics{
-  width: 7em;
-}
-
-.lineImage{
-  width: 8em;
-}
-
-.lineContact{
-  width: 7.5em;
-}
-
-nav ul li a:hover{
-  /* color: #fff; */
-  text-shadow: 0px 0px 5px rgb(155, 32, 185);
+nav ul li:hover{
+  scale: 110%;
 }
 
 .talkToUs{
@@ -298,32 +252,55 @@ nav ul li a:hover{
   }
 }
 
-#inicio{
+#home{
   position: relative;
   width: 100%;
   max-height: 50%;
   display: flex;
   justify-content: center;
-  margin: 50% 0 50% 0;
   flex-direction: column ;
 }
 
 .containerHome1{
   position: relative;
   display: flex;
-  flex-direction: column;
   width: 100%;
   max-height: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 10% 10% 0 10%;
+  background-image: url(https://raw.githubusercontent.com/sebcar336/web-page-exaicfes/main/exaicfes%20pagina%20web/backgroundHome.png);
+  background-size:cover;
+  background-position: center;
 }
 
-.imgHome{
-width: 90%;
-height: 90%;
-filter: brightness(30%);
-scale: 133.25%;
+.containerHome2{
+  background-color: rgba(0, 0, 0, 0.671);
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.nameHome{
+  font-size: 10em;
+  text-align: center;
+  color: #fff;
+  -webkit-text-stroke: .02em black;
+}
+
+.descriptionHome{
+  width: 95%;
+  font-size: 2em;
+  text-align: center;
+  padding: 0 1em 3em  1em;
+  font-weight: 600;
+  color: #fff;
+  -webkit-text-stroke: .03em black;
+}
+
+a{
+  text-decoration: none;
 }
 
 .buttonDownload{
@@ -332,161 +309,108 @@ scale: 133.25%;
   background-color: rgb(255, 209, 3);
   border-radius: 2em;
   display: flex;
-  justify-self: end;
   justify-content: center;
   align-items: center;
-  margin-top: 5em;
-  
+  margin-top: 0em;
+  box-shadow: 0 0.25em 1.25em 0.25em rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  transition: scale 100ms linear;
 }
+
+.buttonDownload:hover{
+  scale: 108%;
+}
+
 .buttonDownload p{
   font-weight: 700;
   font-size: 3em;
   text-align: center;
+  color: #000000;
 }
 
-.containerHome2{
-  position: absolute;
+#AboutUs{
+  position: relative;
+  width: 100%;
+  max-height: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.containerAboutUs1{
   display: flex;
   flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 10% 10% 0 10%;
 }
 
-.nameHome{
-  font-size: 10em;
+.containerAboutUs1 div{
+  background-color: rgb(155, 32, 185);
+  width: 50em;
+  height: 43em;
+  padding: 1em;
+  margin-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+  transition: scale 200ms linear;
+}
+
+.containerAboutUs1 div:hover{
+  scale: 105%;
+  box-shadow: 0 0.25em 1.25em 0em rgba(0, 0, 0, 0.5);
+}
+
+.containerAboutUs1 div h3{
+  font-size: 3.5em;
   text-align: center;
-  margin-bottom: 0.25em;
+  color: #fff;
+  -webkit-text-stroke: .03em #000;
 }
 
-.descriptionHome{
+.txtAboutsUs{
+  background-color: rgb(255, 209, 3);
   font-size: 2em;
   text-align: center;
-  padding-bottom: 1em;
+  padding: .5em 1em;
+  border-radius: 0.5em;
   font-weight: 600;
 }
 
-
-
-  nav ul li a:hover{
-    /* color: #fff; */
-    text-shadow: 0px 0px 5px rgb(155, 32, 185);
+.paddResSoc{
+  padding: 0em 1em;
 }
 
-  .hablanos{
-    cursor: pointer;
-    border: 0.063em solid rgba(0, 0, 0, 0.05);
-    transition: 200ms opacity ease;
-    position: sticky;
-    overflow: hidden;
-    display: flex;
-    box-shadow: 0 0.25em 1.25em 0.25em rgba(0, 0, 0, 0.12);
-    animation: button-fade-in 200ms ease 0s;
-    align-items: center;
-    background-color: rgb(155, 32, 185);
-    height: 4em;
-    color: transparent;
-    border-radius: 2.625em;
-    width: 4em;
-    padding: 0 0.438em;
-  }
-
-  .containerMessageIcon{
-    width: 4em;
-    height: 3em;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 0.5em;
-    margin-left: 20%;
-  }
-
-  .rectangleMessageIcon{
-    width: 2.3em;
-    height: 1.4em;
-    background-color: white;
-    border-radius: 0.5em;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
-  }
-
-  .circleMessageIcon{
-    width: 0.25em;
-    height: 0.3em;
-    background-color: rgb(155, 32, 185);
-    border-radius: 50%;
-  }
-
-  .triangleMessageIcon{
-    width: 0;
-    height: 0;
-    border-right: 0em solid transparent;
-    border-top: 0em solid transparent;
-    border-left: 0.5em solid transparent;
-    border-bottom: 0.5em solid white;
-    rotate: 180deg;
-  }
-
-  .containerMessageIcon p{
-    display: none;
-  }
-
-  @keyframes button-fade-in{
-    0% {
-        opacity: 0;
-        transform: translate(0%, 20%);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0%, 0%);
-    }
-  }
-
-  #inicio{
-    position: relative;
-    width: 100%;
-    max-height: 50%;
-    display: flex;
-    justify-content: center;
-    margin: 25% 0 25% 0;
+.paddResAmb{
+  padding: 1.5em 1em;
 }
 
-
-.containerHome1{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-height: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 10% 10% 0 10%;
+.paddMision{
+  padding: 5em 1em;
 }
 
-.imgHome{
-  width: 90%;
-  height: 90%;
+.paddVision{
+  padding: 4.2em 1em;
 }
 
-.buttonDownload{
-    width: 25em;
-    height: 6em;
-    background-color: rgb(255, 209, 3);
-    border-radius: 2em;
-    display: flex;
-    justify-self: end;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5em;
-    
+.containerAboutUs2{
+  background-color: blueviolet;
+  width: 56em;
+  height: 47.6em;
+  padding: .5em 1em 3.5em 1em;
+  margin-bottom: 4em;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2em;
+  transition: scale 200ms linear;
 }
-.buttonDownload p{
-    font-weight: 700;
-    font-size: larger;
-    text-align: center;
+
+.containerAboutUs2:hover{
+  scale: 105%;
+  box-shadow: 0 0.25em 1.25em 0em rgba(0, 0, 0, 0.5);
+}
+
+.containerAboutUs2 h3{
+  font-size: 3.5em;
+  text-align: center;
+  color: #fff;
+  -webkit-text-stroke: .03em #000;
 }
