@@ -5,6 +5,10 @@
     justify-content: space-between;
   }
 
+  .invisibleHome{
+    height: 1em;
+  }
+
   .invisible{
     height: 1em;
   }
@@ -59,6 +63,7 @@
     height: 2.75em;
     color: rgb(255, 255, 255);
     width: 14em;
+    left: 83%;
   }
 
   .talkToUs:hover{
@@ -67,6 +72,26 @@
 
   .containerMessageIcon{
     margin: 0;
+    width: 3em;
+  }
+
+  footer{
+    width: 100%;
+    height: 11em;
+    margin-top: 3em;
+    padding: 0 25em;
+    background-color: rgb(155, 32, 185);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .politics{
+    font-size: 1em;
+  }
+
+  .socialMedia a img{
     width: 3em;
   }
 
@@ -126,15 +151,16 @@
   #AboutUs{
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .containerAboutUs1{
     flex-direction: row;
     flex-wrap: wrap;
     rotate: 25deg;
-    margin: 8em 0 8em 8em;
-    min-width: 55em;
-    max-width: 55em;
+    margin: 8em 0 8em 5em;
+    min-width: 45em;
+    max-width: 45em;
   }
 
   .containerAboutUs1 div{
@@ -178,7 +204,7 @@
   }
 
   .containerAboutUs2{
-    min-width: 25em;
+    min-width: 24em;
     max-width: 25em;
     height: 17.5em;
     margin-bottom: 9em;
