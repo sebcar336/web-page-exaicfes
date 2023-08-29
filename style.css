@@ -469,8 +469,98 @@ a{
 }
 
 .containerImages div{
-  width: 40%;
-  height: 32%;
+  width: 60%;
+  height: 40%;
   margin: 1em;
-  background-color: rgb(151, 145, 110);
+  position: absolute;
+  border-radius: 5%;
+}
+
+.containerBrochure{
+  background-color: crimson;
+  left: 7%;
+  top: 33%;
+  display: flex;
+  justify-content: left;
+}
+
+.containerCatalogue{
+  background-color: rgb(48, 210, 23);
+  left: 18%;
+  top: 35%;
+}
+
+.containerPresentationCards{
+  background-color: rgb(189, 121, 19);
+  left: 29%;
+  top: 38%;
+  display: flex;
+  justify-content: center;
+}
+
+.containerPresentationCards h2{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 0.5em;
+  font-size: 2.5em;
+  height: fit-content;
+  background-color: blueviolet;
+  border-radius: 0.5em 0.5em 0 0;
+  transition: scale 1s linear;
+}
+
+.containerCatalogue h2{
+  position: absolute;
+  right: 2%;
+  top: 100%;
+  color: #fff;
+  rotate: -90deg;
+  padding: 0.2em 4.8em;
+  text-align: left;
+  font-size: 2.5em;
+  background-color: blueviolet;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.containerBrochure h2{
+  position: absolute;
+  right: 1.89%;
+  top: 102%;
+  color: #fff;
+  rotate: -90deg;
+  padding: 0.2em 5.46em;
+  text-align: left;
+  font-size: 2.5em;
+  background-color: blueviolet;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.containerBrochure:hover{
+  scale: 105%;
+  animation: animImages 1s;
+  z-index: 4;
+}
+
+.containerCatalogue:hover{
+  scale: 105%;
+  animation: animImages 1s;
+  z-index: 4;
+}
+
+.containerPresentationCards:hover{
+  scale: 105%;
+}
+
+@keyframes animImages{
+  0%{
+    transform: translateY(0em);
+  }
+
+  50%{
+    transform: translateY(20em);
+  }
+
+  100%{
+    transform: translateY(0em);
+  }
 }
