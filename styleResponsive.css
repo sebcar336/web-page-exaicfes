@@ -64,6 +64,7 @@
     color: rgb(255, 255, 255);
     width: 14em;
     left: 83%;
+    padding: 0 0.438em;
   }
 
   .talkToUs:hover{
@@ -124,11 +125,8 @@
   .descriptionHome{
     width: 95%;
     font-size: 1.25em;
-    text-align: center;
     padding: 0 1em 3em  1em;
     font-weight: 600;
-    color: #fff;
-    -webkit-text-stroke: .03em black;
   }
 
   .buttonDownload{
@@ -185,6 +183,7 @@
     font-size: .8em;
     padding: 0.5em 1em;
     border-radius: 0.5em;
+    text-align: center;
   }
 
   .paddResSoc{
