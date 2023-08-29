@@ -240,12 +240,30 @@ nav ul li:hover{
 
 footer{
   width: 100%;
-  height: 13em;
+  height: 31em;
   margin-top: 3em;
   background-color: rgb(155, 32, 185);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+iframe{
+  position: relative;
+  width: 400px;
+  height: 600px;
+  border: 0;
+  margin: 1em;
+  transition: scale 100ms linear;
+  border-radius: 5%;
+  filter: opacity(50%);
+}
+
+iframe:hover{
+  scale: 105%;
+  filter: opacity(100%);
 }
 
 .politics{
@@ -385,7 +403,7 @@ a{
 .txtAboutsUs{
   background-color: rgb(255, 209, 3);
   font-size: 2em;
-  text-align: justify;
+  text-align: center;
   padding: .5em 1em;
   border-radius: 0.5em;
   font-weight: 600;
@@ -429,4 +447,30 @@ a{
   text-align: center;
   color: #fff;
   -webkit-text-stroke: .03em #000;
+}
+
+#Images{
+  width: 100vw;
+  height: 100em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerImages{
+  position: relative;
+  width: 90%;
+  height: 90%;
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerImages div{
+  width: 40%;
+  height: 32%;
+  margin: 1em;
+  background-color: rgb(151, 145, 110);
 }

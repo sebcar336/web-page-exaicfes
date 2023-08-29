@@ -1,6 +1,7 @@
 header{
     display: flex;
     padding: 1em 5em;
+    flex-direction: row-reverse;
 }
 
 .backPolitics{
