@@ -9,8 +9,8 @@
     height: 1em;
   }
 
-  .invisible{
-    height: 1em;
+  #aboutUsLink{
+    height: 0em;
   }
 
   .logo img {
@@ -235,5 +235,56 @@ iframe:hover{
     margin-bottom: 0em;
     color: #fff;
     -webkit-text-stroke: .03em #000;
+  }
+
+  #Images{
+    height: 35em;
+    width: 98vw;
+  }
+
+  .containerImages{
+    margin-top: 10%;
+    background-color: rgba(163, 159, 159, 0.303);
+    max-width: 80%;
+    height: 30em;
+    border-radius: 1.5em;
+  }
+  .containerImages div{
+    width: 30em;
+    height: 20em;
+  }
+
+  .containerBrochure{
+    top: 10%;
+    left: 23%;
+  }
+
+  .containerCatalogue{
+    top: 15%;
+    left: 30.5%;
+  }
+
+  .containerPresentationCards{
+    top: 20%;
+    left: 38%;
+  }
+
+  .containerPresentationCards h2{
+    padding: .25em 3.599em;
+    font-size: 1.5em;
+  }
+
+  .containerCatalogue h2{
+    right: 65.2%;
+    top: 37.8%;
+    padding: 0.2em 4.3em;
+    font-size: 1.5em;
+  }
+  
+  .containerBrochure h2{
+    right: 65.2%;
+    top: 37.8%;
+    padding: 0.2em 4.95em;
+    font-size: 1.5em;
   }
 }
