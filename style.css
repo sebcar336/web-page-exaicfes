@@ -7,16 +7,12 @@
   --secondaryColor: rgb(255, 196, 0);
 }
 body{
-  background-color: rgb(227, 226, 226);
+  background-color: rgba(255, 196, 0, 0.158);
 
 }
 
 .invisibleHome{
   height: 11.5em;
-}
-
-#aboutUslink{
-  height: .5em;
 }
 
 header {
@@ -155,18 +151,19 @@ nav ul li {
   margin-left: 0;
   align-items: flex-end;
   transition: scale 100ms linear;
+  cursor:pointer;
 }
 
 nav ul li a {
   text-decoration: none;
   display: flex;
-  font-size: x-large;
+  font-size: 1.8em;
   font-weight: 800;
   color: #000;
 }
 
 nav ul li:hover{
-  scale: 110%;
+  scale: 105%;
 }
 
 .talkToUs{
@@ -242,54 +239,6 @@ nav ul li:hover{
       opacity: 1;
       transform: translate(0%, 0%);
   }
-}
-
-footer{
-  width: 100%;
-  height: 31em;
-  margin-top: 3em;
-  background-color: var(--primaryColor);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-iframe{
-  position: relative;
-  width: 400px;
-  height: 600px;
-  border: 0;
-  margin: 1em;
-  transition: scale 100ms linear;
-  border-radius: 5%;
-  filter: opacity(50%);
-}
-
-iframe:hover{
-  scale: 105%;
-  filter: opacity(100%);
-}
-
-.politics{
-  color: #fff;
-  font-size: 2em;
-  margin: 1em;
-  text-decoration:underline;
-}
-
-.socialMedia{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.socialMedia a img{
-  width: 5em;
 }
 
 #home{
@@ -375,6 +324,7 @@ a{
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  margin-top: 13em;
 }
 
 .containerAboutUs1{
@@ -466,8 +416,7 @@ a{
 .containerImages{
   position: relative;
   width: 90%;
-  height: 90%;
-  background-color: aqua;
+  height: 90em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -479,38 +428,140 @@ a{
   height: 40%;
   margin: 1em;
   position: absolute;
-  border-radius: 5%;
 }
 
-.containerBrochure{
-  background-color: crimson;
-  left: 7%;
+.containerImages div a{
+  background-color: var(--secondaryColor);
+  color: #000;
+  font-weight: bold;
+  height: min-content;
+  position: absolute;
+  left: 30%;
+  display: flex;
+  align-self: center;
+  font-size: 3em;
+  padding: .25em 1em;
+  border-radius:.4em;
+}
+.linkCatalogue{
+  top: 42.5%;
+}
+
+
+.containerVolant {
+  left: 2%;
   top: 33%;
   display: flex;
   justify-content: left;
-  }
+}
+
+.containerVolant::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  background-image: url(img/volante-exaicfes-s.a.s.png); /* Ajusta la ruta de la imagen */
+  background-size: cover; /* Esta propiedad ajusta la imagen al tamaño del div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center center; /* Centra la imagen en el div */
+  filter: brightness(0.7); /* Reduces el brillo al 70% */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+.containerBrochure {
+  left: 12%;
+  top: 35%;
+  display: flex;
+  justify-content: left;
+}
+
+.containerBrochure::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  background-image: url(img/Folleto-ExaIcfesSAS.png); /* Ajusta la ruta de la imagen */
+  background-size: cover; /* Esta propiedad ajusta la imagen al tamaño del div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center center; /* Centra la imagen en el div */
+  filter: brightness(0.7); /* Reduces el brillo al 70% */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.12);
+}
 
 .containerCatalogue{
-  background-color: rgb(48, 210, 23);
-  left: 18%;
-  top: 35%;
+  left: 24%;
+  top: 38%;
+}
+
+.containerCatalogue:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  background-image: url(img/catalogo-exaicfes-s.a.s.png); /* Ajusta la ruta de la imagen */
+  background-size: cover; /* Esta propiedad ajusta la imagen al tamaño del div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center center; /* Centra la imagen en el div */
+  filter: brightness(0.7); /* Reduces el brillo al 70% */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.12);
 }
 
 .containerPresentationCards{
-  background-color: rgb(189, 121, 19);
-  left: 29%;
-  top: 38%;
+  left: 35%;
+  top: 41%;
   display: flex;
   justify-content: center;
-  transition: scale 300ms linear;
+  transition: scale 200ms linear;
 }
 
-.containerPresentationCards h2{
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 0.5em;
+.containerPresentationCards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  background-image: url(img/tarjeta-exaicfes-s.a.s.png); /* Ajusta la ruta de la imagen */
+  background-size: cover; /* Esta propiedad ajusta la imagen al tamaño del div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center center; /* Centra la imagen en el div */
+  filter: brightness(0.7); /* Reduces el brillo al 70% */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.12);
+}
+
+.containerVolant h2{
+  position: absolute;
+  right: 2.5%;
+  top: 101%;
+  color: #fff;
+  rotate: -90deg;
+  padding: 0.2em 5.17em;
+  text-align: left;
   font-size: 2.5em;
-  height: fit-content;
+  background-color: blueviolet;
+  border-radius: 0.5em 0.5em 0 0;
+  filter: brightness(1 );
+}
+
+.containerBrochure h2{
+  position: absolute;
+  right: 2.66%;
+  top: 101.5%;
+  color: #fff;
+  rotate: -90deg;
+  padding: 0.2em 5.48em;
+  text-align: left;
+  font-size: 2.5em;
   background-color: blueviolet;
   border-radius: 0.5em 0.5em 0 0;
 }
@@ -518,38 +569,43 @@ a{
 .containerCatalogue h2{
   position: absolute;
   right: 2%;
-  top: 100%;
+  top: 101%;
   color: #fff;
   rotate: -90deg;
-  padding: 0.2em 4.8em;
+  padding: 0.2em 4.85em;
   text-align: left;
   font-size: 2.5em;
   background-color: blueviolet;
   border-radius: 0.5em 0.5em 0 0;
 }
 
-.containerBrochure h2{
-  position: absolute;
-  right: 1.89%;
-  top: 102%;
-  color: #fff;
-  rotate: -90deg;
-  padding: 0.2em 5.46em;
-  text-align: left;
-  font-size: 2.5em;
+.containerPresentationCards h2{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: .5em 1.87em;
+  font-size: 2em;
+  height: fit-content;
   background-color: blueviolet;
   border-radius: 0.5em 0.5em 0 0;
+  filter: brightness(1);
+
+}
+
+.containerVolant:hover{
+  scale: 105%;
+  animation: animImages 1s;
+  z-index: 4;
 }
 
 .containerBrochure:hover{
   scale: 105%;
-  animation: animImages 1.5s;
+  animation: animImages 1s;
   z-index: 4;
 }
 
 .containerCatalogue:hover{
   scale: 105%;
-  animation: animImages 1.5s;
+  animation: animImages 1s;
   z-index: 4;
 }
 
@@ -569,4 +625,72 @@ a{
   100%{
     transform: translateY(0em);
   }
+}
+
+footer{
+  width: 100%;
+  height: 60vw;
+  margin-top: 3em;
+  background-color: var(--primaryColor);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.address{
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.address p{
+  color: #fff;
+  font-size: 2em;
+  padding: 0 1em;
+}
+
+footer img{
+  width: 5em;
+}
+
+iframe{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 0;
+  margin: 1em;
+  transition: scale 100ms linear;
+  border-radius: 5%;
+  filter: opacity(50%);
+}
+
+iframe:hover{
+  scale: 105%;
+  filter: opacity(100%);
+}
+
+.socialMedia{
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.socialMedia div{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.socialMedia a{
+  width: 5em;
+}
+
+.socialMedia a img{
+  width: 5em;
 }

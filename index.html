@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleResponsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <title>Exaicfes</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleResponsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Exaicfes</title>
 </head>
 <body>
     <header>
-        <div  class="logo">
-            <a href="#homeLink"><img src="https://raw.githubusercontent.com/sebcar336/web-page-exaicfes/main/img/IconExaicfes.png"></a>
+        <div id="scrollToStart" class="logo">
+            <a><img src="https://raw.githubusercontent.com/sebcar336/web-page-exaicfes/main/img/IconExaicfes.png"></a>
           </div>
             <nav id="navigation">
               <div class="menuItems">
@@ -32,10 +33,10 @@
                 </span></a>
               </div>
               <ul class="navItems">
-                <li><a href="#aboutUsLink">Sobre Nosotros</a></li>
+                <li><a id="scrollToAboutUs">Sobre Nosotros</a></li>
                 <li><a href="politics.html">Politicas</a></li>
-                <li><a href="#ImagesLink">Imagenes</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li><a id="scrollToImages">Imagenes</a></li>
+                <li><a id="scrollToContact">Contacto</a></li>
               </ul>
             </nav>
     </header>
@@ -79,38 +80,70 @@
       </section>
       <div id="ImagesLink"></div>
       <section id="Images">
-        <div class="containerImages">
-          <div class="containerBrochure"><div><h2>Folleto</h2></div></div>
-          <div class="containerCatalogue"><div><h2>Catálogo</h2></div></div>
-          <div class="containerPresentationCards"><h2>Tarjetas de Presentación</h2></div>
+        <div class="containerImages">          
+          <div class="containerVolant">
+            <div><h2>Volante</h2></div>
+            <a href="https://drive.google.com/file/d/1KKgW7MJdk-zf-jkLb0PF0gljxb_sKHDv/view?usp=sharing">Abrir</a>
+          </div>
+          <div class="containerBrochure">
+            <div><h2>Folleto</h2></div>
+            <a href="https://drive.google.com/file/d/1kEUNzYTqn_TK5PYIKpvMj3lD3A_bgqDN/view?usp=sharing">Abrir</a>
+          </div>
+          <div class="containerCatalogue">
+            <div><h2>Catálogo</h2></div>
+          <a href="https://drive.google.com/file/d/1JOGnh_3VFPiJl8msv7zipJyHsw4N35rD/view?usp=sharing" class="linkCatalogue">Abrir</a>
+        </div>
+          <div class="containerPresentationCards">
+            <h2>Tarjetas de Presentación</h2>
+            <a href="https://drive.google.com/file/d/1qcjqSqY-quv6HuutKDjG0rrUN5sfLeIS/view?usp=sharing">Abrir</a>
+          </div>
         </div>
       </section>
     </main>
 
-
-    <div class="talkToUs">
-      <div class="containerMessageIcon">
-        <div class="rectangleMessageIcon">
-          <div class="circleMessageIcon"></div>
-          <div class="circleMessageIcon"></div>
-          <div class="circleMessageIcon"></div>
+    <a href="mailto:exaicfes@gmail.com">
+      <div class="talkToUs">
+        <div class="containerMessageIcon">
+          <div class="rectangleMessageIcon">
+            <div class="circleMessageIcon"></div>
+            <div class="circleMessageIcon"></div>
+            <div class="circleMessageIcon"></div>
+          </div>
+          <div class="triangleMessageIcon"></div>
         </div>
-        <div class="triangleMessageIcon"></div>
+        <p>Habla con Nosotros</p>
       </div>
-      <p>Habla con Nosotros</p>
-    </div>
+    </a>
 
     <footer id="contact">
-      <a class="politics" href="politics.html">Politicas</a>
-      <p style="color: #fff;">Esquina con Av. Suba Calle 145, Av. Cdad. de Cali, Bogotá</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.9821301354928!2d-74.09614970911544!3d4.744700433413914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84f5bf63a349%3A0x598fa6d43765a25c!2sAlpaso%20Plaza!5e0!3m2!1ses-419!2sco!4v1693284218385!5m2!1ses-419!2sco" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      <img style="width: 5em;" src="https://raw.githubusercontent.com/sebcar336/web-page-exaicfes/main/img/qrRedesSociales.jpg">
+      <div class="address">
+        <p>Esquina con Av. Suba Calle 145, Av. Cdad. de Cali, Bogotá</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.9821301354928!2d-74.09614970911544!3d4.744700433413914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f84f5bf63a349%3A0x598fa6d43765a25c!2sAlpaso%20Plaza!5e0!3m2!1ses-419!2sco!4v1693284218385!5m2!1ses-419!2sco" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
       <div class="socialMedia">
-        <a href="https://www.facebook.com/people/Exa-Icfes/pfbid0rj1V3kMwFK3NPWAs1k2CRptbXJKuSdxw7CJjopgkkESw4aDYJM97EGiqVvVrM5oxl/?mibextid=ZbWKwL"><img src="https://static.wixstatic.com/media/e41247_290f2558bdfd4b118e0be4853386dac1~mv2.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/exaicfes/"><img src="https://static.wixstatic.com/media/e41247_3675c1c59a7a4781a48f4581778f8b26~mv2.png" alt="Instagram"></a>
-        <a href="https://www.tiktok.com/@exaicfesproyecto"><img src="https://static.wixstatic.com/media/e41247_966967c9955d40c59c896bb2752f515b~mv2.png" alt="Tik Tok"></a>
-        <a href="https://www.threads.net/@exaicfes"><img src="https://raw.githubusercontent.com/sebcar336/web-page-exaicfes/main/img/threads-logo.png"></a>
+        <div>
+          <a href="https://www.facebook.com/people/Exa-Icfes/pfbid0rj1V3kMwFK3NPWAs1k2CRptbXJKuSdxw7CJjopgkkESw4aDYJM97EGiqVvVrM5oxl/?mibextid=ZbWKwL"><img src="https://static.wixstatic.com/media/e41247_290f2558bdfd4b118e0be4853386dac1~mv2.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/exaicfes/"><img src="https://static.wixstatic.com/media/e41247_3675c1c59a7a4781a48f4581778f8b26~mv2.png" alt="Instagram"></a>  
+        </div>
+        <img src="https://raw.githubusercontent.com/sebcar336/web-page-exaicfes/main/img/qrRedesSociales.jpg">
+        <div>        
+          <a href="https://www.tiktok.com/@exaicfesproyecto"><img src="https://static.wixstatic.com/media/e41247_966967c9955d40c59c896bb2752f515b~mv2.png" alt="Tik Tok"></a>
+          <a href="https://www.threads.net/@exaicfes"><img src="https://raw.githubusercontent.com/sebcar336/web-page-exaicfes/main/img/threads-logo.png"></a>
+        </div>
       </div>
     </footer>
 </body>
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", function() {
+      var scrollToTopButton = document.getElementById("scrollToTopButton");
+      
+      scrollToTopButton.addEventListener("click", function() {
+          // Desplazar la página hacia el inicio suavemente
+          window.scrollTo({
+              top: 0,
+              behavior: "smooth"
+          });
+      });
+  });
+  </script> -->
 </html>

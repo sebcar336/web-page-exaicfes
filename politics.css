@@ -22,8 +22,10 @@ h1{
 
 .txtPolitics{
     padding: 5em;
-    text-align: justify;
+    text-align: left;
 }
+
+
 
 @media screen and (min-width: 1024px){
     .backPolitics{
@@ -33,6 +35,7 @@ h1{
     h1{
         text-align: center;
         font-size: 3em;
+        padding: 1em 0;
     }
 
     .txtPolitics{
