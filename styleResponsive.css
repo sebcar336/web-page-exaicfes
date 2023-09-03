@@ -294,7 +294,7 @@
   .address p{
     color: #fff;
     font-size: 1em;
-    padding: 0 1em;
+    padding: 0 .5em;
   }
   
   iframe{
