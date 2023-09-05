@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var scrollToTopButton = document.getElementById("scrollToStart");
     
     scrollToTopButton.addEventListener("click", function() {
-        // Desplazar la página hacia el inicio suavemente
         window.scrollTo({
             top: 0,
             behavior: "smooth"
@@ -17,7 +16,6 @@ if (window.innerWidth >= widthResponsiveWindow) {
         var scrollToTopButton = document.getElementById("scrollToAboutUs");
         
         scrollToTopButton.addEventListener("click", function() {
-            // Desplazar la página hacia el inicio suavemente
             window.scrollTo({
                 top: 690,
                 behavior: "smooth"
@@ -29,7 +27,6 @@ if (window.innerWidth >= widthResponsiveWindow) {
         var scrollToTopButton = document.getElementById("scrollToImages");
         
         scrollToTopButton.addEventListener("click", function() {
-            // Desplazar la página hacia el inicio suavemente
             window.scrollTo({
                 top: 1530,
                 behavior: "smooth"
@@ -41,7 +38,6 @@ if (window.innerWidth >= widthResponsiveWindow) {
         var scrollToTopButton = document.getElementById("scrollToAboutUs");
         
         scrollToTopButton.addEventListener("click", function() {
-            // Desplazar la página hacia el inicio suavemente
             window.scrollTo({
                 top: 1530,
                 behavior: "smooth"
@@ -53,7 +49,6 @@ if (window.innerWidth >= widthResponsiveWindow) {
         var scrollToTopButton = document.getElementById("scrollToImages");
         
         scrollToTopButton.addEventListener("click", function() {
-            // Desplazar la página hacia el inicio suavemente
             window.scrollTo({
                 top: 5800,
                 behavior: "smooth"
@@ -66,7 +61,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var scrollToTopButton = document.getElementById("scrollToContact");
     
     scrollToTopButton.addEventListener("click", function() {
-        // Desplazar la página hacia el inicio suavemente
         window.scrollTo({
             top: 9999,
             behavior: "smooth"
